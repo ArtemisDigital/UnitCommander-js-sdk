@@ -1,6 +1,6 @@
 {
   "name": "@artemisdigital/unitcommander-sdk",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UnitCommander Official Javascript SDK",
   "scripts": {
     "dev": "nodemon --exec 'tsc --project .\tsconfig.json' --watch ./src/* --ext ts,json,js",
