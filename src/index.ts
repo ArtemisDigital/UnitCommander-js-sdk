@@ -52,9 +52,10 @@ export class UnitCommanderServices {
   /**
    * @description Creates the object used for creating / updating entities
    * @param data a JSON object of the body data
-   * @param img a read image from your local directory used to add images to UnitCommander
+   * @param img an image buffer from your local directory used to add images to UnitCommander
+   * @returns formData object for creating / updating
    */
-  createBody(data: any, img: any) {
+  createBody(data: Object, img: Buffer) {
     const form = new FormData()
     const body = new Blob([JSON.stringify(data)], { type: 'application/json' })
     const image = new Blob([img], { type: 'image/png' })
