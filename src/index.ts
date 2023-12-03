@@ -1,5 +1,5 @@
 import { createApi } from './services/utils/webhooks.js'
-import { CommunityRanks } from './services/index.js'
+import { CommunityRanks,CommunityQualifications } from './services/index.js'
 import { IConfig } from './types/interactions.js'
 import axios from 'axios'
 
@@ -69,5 +69,13 @@ export class UnitCommanderServices {
    */
   Ranks() {
     return new CommunityRanks(this.configuration)
+  }
+
+  
+  /**
+   * @description Community Qualifications, all options for getting, adding, deleting and modifying Qualifications
+   */
+  Qualifications() {
+    return new CommunityQualifications(this.configuration)
   }
 }
