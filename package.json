@@ -10,6 +10,10 @@
     "sdk",
     "unitcommander"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtemisDigital/UnitCommander-js-sdk.git"
+  },
   "type": "module",
   "private": false,
   "author": "Unit Commander Team",
