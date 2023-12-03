@@ -1,0 +1,40 @@
+{
+  "name": "@artemisdigital/unitcommander-sdk",
+  "version": "0.0.2",
+  "description": "UnitCommander Official Javascript SDK",
+  "scripts": {
+    "dev": "nodemon --exec 'tsc --project .\tsconfig.json' --watch ./src/* --ext ts,json,js"
+  },
+  "keywords": [
+    "sdk",
+    "unitcommander"
+  ],
+  "type": "module",
+  "private": false,
+  "author": "Unit Commander Team",
+  "license": "",
+  "engines": {
+    "node": "<16"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@types/http-errors": "^2.0.4",
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "formdata-node": "^6.0.3",
+    "http-errors": "^2.0.0"
+  }
+}
